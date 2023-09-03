@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Alert } from "./components/Alert";
 import { Button } from "./components/Button";
 import ListGroup from "./components/ListGroup";
+import { Nav } from "./components/Nav";
 
 function App() {
   let items = ["France", "Switzerland", "Germany", "NetherLands", "USA"];
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <Nav/>
       <ListGroup
         items={items}
         heading="Countries"
